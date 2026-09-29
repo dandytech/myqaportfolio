@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import "./styles.css";
 import initPortfolio from "./effects.js";
-import photo from "../assets/dan-photo.jpeg";
-import photo2 from "../assets/daniel.jpeg";
-import photo3 from "../assets/dan2.jpeg";
-import photo4 from "../assets/java.png";
-
+import photo from "../src/assets/dan-photo.jpeg";
+import photo2 from "../src/assets/daniel.jpeg";
+import photo3 from "../src/assets/dan2.jpeg";
+import photo4 from "../src/assets/java.png";
 
 export default function App() {
   useEffect(() => {
@@ -102,7 +101,11 @@ export default function App() {
                         role="img"
                         aria-label="Portrait of Daniel Nwankwo"
                       >
-                        <img src={photo} alt="Portrait of Daniel Nwankwo" width={200} />
+                        <img
+                          src={photo}
+                          alt="Portrait of Daniel Nwankwo"
+                          width={200}
+                        />
                       </div>
                     </div>
                     <div className="corner">
@@ -367,7 +370,7 @@ export default function App() {
           <div className="two">
             <div className="me" id="me">
               <div className="ph" role="img" aria-label="Portrait of Daniel">
-                <img src={photo3} alt="Photo: Daniel" width={360}/>
+                <img src={photo3} alt="Photo: Daniel" width={360} />
               </div>
             </div>
             <div>
