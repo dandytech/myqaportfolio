@@ -63,10 +63,18 @@ export default function App() {
 
       <main>
         <section id="intro" className="on-n">
-          <div className="words">
+          <div className="words" style={{marginTop: "-60px"}}>
             <div className="wrow">
               <span className="sw" style={{ "--i": "0" }}>
-                <span>Quality Assurance</span>
+                <span
+                  style={{
+                    color: "",
+                    display: "block",
+                    marginBottom: "0px",
+                  }}
+                >
+                  Quality Assurance
+                </span>
               </span>
             </div>
             <div className="wrow">
@@ -91,7 +99,7 @@ export default function App() {
               <div className="clip"></div>
               <div className="holder">
                 <button
-                  className="flip"
+                  className="flip "
                   id="flip"
                   aria-label="Flip the ID card"
                 >
