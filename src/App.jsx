@@ -15,7 +15,7 @@ export default function App() {
     <>
       <header id="hd">
         <a className="logo" href="#intro" aria-label="Daniel, back to top">
-          daniel
+          Daniel
         </a>
         <a className="nl" href="#work">
           Work
@@ -476,7 +476,7 @@ export default function App() {
                   target="_blank"
                   rel="noopener"
                 >
-                  daniel-amaechi-nwankwo
+                  Daniel-Amaechi-Nwankwo
                 </a>
               </div>
             </div>
