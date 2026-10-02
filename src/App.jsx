@@ -63,7 +63,7 @@ export default function App() {
 
       <main>
         <section id="intro" className="on-n">
-          <div className="words" style={{marginTop: "-60px"}}>
+          <div className="words" style={{ marginTop: "-60px" }}>
             <div className="wrow">
               <span className="sw" style={{ "--i": "0" }}>
                 <span
@@ -289,7 +289,6 @@ export default function App() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
                   strokeLinejoin="round"
                   aria-hidden="true"
                 >
