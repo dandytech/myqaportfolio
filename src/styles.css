@@ -253,7 +253,7 @@ header.show {
 }
 .stage {
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 0;
   transform: translateX(-50%);
   width: min(66vw, 380px);
@@ -781,9 +781,6 @@ header.show {
   height: auto;
   aspect-ratio: 4/3;
 }
-.lk {
-  display: block;
-}
 .prog i {
   display: block;
   height: 100%;
@@ -959,160 +956,5 @@ header.show {
   }
   .type::after {
     display: none;
-  }
-}
-
-/* =========================================================
-   RESPONSIVE FIXES - MOBILE & TABLET / iPAD
-   Added without changing the original desktop design
-   ========================================================= */
-
-#about {
-  overflow: hidden;
-}
-
-#about .two {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-/* Tablet / iPad */
-@media (max-width: 859px) {
-  #about .two {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    align-items: start;
-  }
-
-  #about .collage {
-    width: 100%;
-    max-width: 620px;
-    margin: 0 auto;
-    padding-bottom: 24%;
-  }
-
-  #about .c1 {
-    width: 78%;
-    max-width: 480px;
-  }
-
-  #about .c2 {
-    width: 46%;
-    max-width: 280px;
-  }
-
-  #about .note {
-    font-size: clamp(20px, 4vw, 30px);
-  }
-
-  #about .two h2 {
-    min-height: auto;
-    height: auto;
-    margin-bottom: 20px;
-    font-size: clamp(30px, 6vw, 48px);
-    line-height: 1.08;
-    max-width: 14ch;
-  }
-
-  #about .two p {
-    max-width: 100%;
-    font-size: clamp(16px, 2vw, 18px);
-    line-height: 1.65;
-  }
-}
-
-/* Mobile phones */
-@media (max-width: 640px) {
-  #about {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  #about .two {
-    display: flex;
-    flex-direction: column;
-    gap: 42px;
-    width: 100%;
-  }
-
-  #about .collage {
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    padding-bottom: 22%;
-  }
-
-  #about .c1 {
-    width: 80%;
-    border-width: 4px;
-    box-shadow: 7px 7px 0 var(--burg);
-  }
-
-  #about .c2 {
-    width: 48%;
-    border-width: 4px;
-    box-shadow: 6px 6px 0 var(--burg);
-  }
-
-  #about .note {
-    left: 3%;
-    bottom: 3%;
-    font-size: clamp(18px, 5vw, 24px);
-    padding: 4px 11px;
-    border-radius: 9px;
-  }
-
-  #about .two > div:last-child {
-    width: 100%;
-  }
-
-  #about .two h2 {
-    min-height: 0;
-    height: auto;
-    margin-bottom: 18px;
-    font-size: clamp(28px, 8.5vw, 42px);
-    line-height: 1.08;
-    letter-spacing: -0.025em;
-    max-width: 100%;
-  }
-
-  #about .two p {
-    width: 100%;
-    max-width: 100%;
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 16px;
-  }
-}
-
-/* Small phones */
-@media (max-width: 380px) {
-  #about {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  #about .two {
-    gap: 34px;
-  }
-
-  #about .collage {
-    max-width: 340px;
-  }
-
-  #about .two h2 {
-    font-size: clamp(26px, 9vw, 36px);
-    line-height: 1.1;
-  }
-
-  #about .two p {
-    font-size: 14px;
-    line-height: 1.65;
-  }
-
-  #about .note {
-    font-size: 17px;
-    padding: 3px 9px;
   }
 }

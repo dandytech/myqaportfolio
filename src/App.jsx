@@ -113,7 +113,7 @@ export default function App() {
                         <img
                           src={photo}
                           alt="Portrait of Daniel Nwankwo"
-                          width={200}
+                          width={150}
                         />
                       </div>
                     </div>
@@ -179,7 +179,7 @@ export default function App() {
             <div className="collage">
               <div className="c1 rv l">
                 <div className="ph" role="img" aria-label="Daniel at work">
-                  <img src={photo2} alt="Photo: Daniel" width={405} />
+                  <img src={photo2} alt="Photo: Daniel" width={250} />
                 </div>
               </div>
               <div className="c2 rv r">
@@ -191,12 +191,16 @@ export default function App() {
                   <img src={photo4} alt="Photo: workspace" width={400} />
                 </div>
               </div>
-              <div className="note rv s" style={{ transitionDelay: ".5s" }}>
+              <div
+                className="note rv s"
+                style={{ transitionDelay: ".5s", marginBottom: "-70px" }}
+              >
                 hi, I am Daniel
               </div>
             </div>
             <div>
               <h2
+                style={{ marginTop: "40px" }}
                 id="ty"
                 data-t="I find the bugs before your users do."
                 aria-label="I find the bugs before your users do."
@@ -289,6 +293,7 @@ export default function App() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
+                  strokeWidth="2"
                   strokeLinejoin="round"
                   aria-hidden="true"
                 >
@@ -378,7 +383,7 @@ export default function App() {
           <div className="two">
             <div className="me" id="me">
               <div className="ph" role="img" aria-label="Portrait of Daniel">
-                <img src={photo3} alt="Photo: Daniel" width={360} />
+                <img src={photo3} alt="Photo: Daniel" width={235} />
               </div>
             </div>
             <div>
