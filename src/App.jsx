@@ -113,7 +113,7 @@ export default function App() {
                         <img
                           src={photo}
                           alt="Portrait of Daniel Nwankwo"
-                          width={150}
+                          width={170}
                         />
                       </div>
                     </div>
@@ -179,7 +179,7 @@ export default function App() {
             <div className="collage">
               <div className="c1 rv l">
                 <div className="ph" role="img" aria-label="Daniel at work">
-                  <img src={photo2} alt="Photo: Daniel" width={250} />
+                  <img src={photo2} alt="Photo: Daniel" width={380} />
                 </div>
               </div>
               <div className="c2 rv r">
@@ -383,7 +383,7 @@ export default function App() {
           <div className="two">
             <div className="me" id="me">
               <div className="ph" role="img" aria-label="Portrait of Daniel">
-                <img src={photo3} alt="Photo: Daniel" width={235} />
+                <img src={photo3} alt="Photo: Daniel" width={350} />
               </div>
             </div>
             <div>
