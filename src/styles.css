@@ -52,6 +52,7 @@
 html {
   scroll-behavior: smooth;
   background: var(--navy);
+  overflow-x: hidden;
 }
 body {
   font-family: var(--b);
@@ -917,6 +918,47 @@ header.show {
     font-size: 12px;
   }
 }
+
+/* =========================================
+   OVERFLOW SAFETY (applies to everyone, not
+   just prefers-reduced-motion users)
+   ========================================= */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.ph {
+  max-width: 100%;
+  overflow: hidden;
+}
+.ph img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+a {
+  overflow-wrap: anywhere;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -956,109 +998,5 @@ header.show {
   }
   .type::after {
     display: none;
-  }
-
-  /* NEW STYLES */
-  /* =========================================
-   GLOBAL OVERFLOW CONTROL
-   ========================================= */
-
-  html,
-  body,
-  #root {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-
-  /* Prevent sections from creating horizontal overflow */
-  section,
-  header,
-  main,
-  footer,
-  article,
-  div {
-    max-width: 100%;
-  }
-
-  /* =========================================
-   IMAGES
-   ========================================= */
-
-  img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
-
-  /* Image containers */
-  .ph {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .ph img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* =========================================
-   TEXT
-   ========================================= */
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    max-width: 100%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  }
-
-  /* Prevent long links/URLs from creating overflow */
-  a {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-  }
-
-  /* =========================================
-   MOBILE
-   ========================================= */
-
-  @media (max-width: 859px) {
-    html,
-    body,
-    #root {
-      width: 100%;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-
-    section {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
   }
 }
