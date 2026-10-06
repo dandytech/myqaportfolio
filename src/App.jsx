@@ -73,7 +73,7 @@ export default function App() {
                     marginBottom: "0px",
                   }}
                 >
-                  Quality Assurance
+                  Software QA Engineer
                 </span>
               </span>
             </div>
