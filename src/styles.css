@@ -1890,7 +1890,11 @@ header.show {
   }
 
   .cv {
-    display: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px;
+    text-decoration: underline
+   
   }
 
   .pill {
