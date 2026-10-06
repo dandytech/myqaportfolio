@@ -1252,7 +1252,12 @@ header.show {
   padding: 0;
 
   /*
-    Desktop keeps the original long scrolling experience.
+    Fallback only. effects.js measures the actual width of the
+    Selected Work track and sets this height inline via sizeWork(),
+    which overrides every value below (inline style beats any
+    selector, media query included) so the pinned scroll always
+    ends exactly when the last card finishes sliding in - no
+    leftover empty scroll on any screen size.
   */
   height: 400vh;
 
@@ -1348,6 +1353,9 @@ header.show {
   overflow: hidden;
 
   width: 100%;
+
+  /* padding around each job's photo, matted against the navy frame */
+  padding: 12px;
 }
 
 .frame .ph {
@@ -1357,7 +1365,7 @@ header.show {
 
   border: 0;
 
-  border-radius: 22px;
+  border-radius: 14px;
 
   font-family: var(--h);
 
@@ -1366,6 +1374,9 @@ header.show {
   padding: 0;
 
   overflow: hidden;
+
+  /* placeholder tint so the padding is visible before real photos go in */
+  background: var(--burg);
 }
 
 .frame .ph img {
@@ -2138,10 +2149,12 @@ header.show {
     height: min(42svh, 360px);
 
     border-radius: 18px;
+
+    padding: 10px;
   }
 
   .frame .ph {
-    border-radius: 18px;
+    border-radius: 11px;
   }
 
   .cap {

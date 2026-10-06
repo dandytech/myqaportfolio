@@ -147,6 +147,17 @@ export default function initPortfolio() {
       return card("gcard", p);
     }).join("");
 
+    /* size the pinned scroll section to match how far the cards actually
+       need to travel, instead of a fixed guess - this is what keeps the
+       slide finishing exactly when the pin releases, on any screen size */
+    function sizeWork() {
+      var vh = innerHeight;
+      var dist = Math.max(0, $("#track").scrollWidth - innerWidth);
+      $("#work").style.height = vh + Math.max(dist * 1.3, vh * 1.1) + "px";
+    }
+
+    sizeWork();
+
     var vb = $("#vaw"),
       aw = $("#allworks");
 
@@ -410,7 +421,11 @@ export default function initPortfolio() {
       passive: true,
     });
 
-    addEventListener("resize", req);
+    addEventListener("resize", function () {
+      sizeWork();
+
+      req();
+    });
 
     upd();
 

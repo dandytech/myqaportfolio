@@ -113,7 +113,7 @@ export default function App() {
                         <img
                           src={photo}
                           alt="Portrait of Daniel Nwankwo"
-                          width={170}
+                          style={{ width: "80%", height: "100%" }}
                         />
                       </div>
                     </div>
@@ -182,13 +182,17 @@ export default function App() {
                   <img src={photo2} alt="Photo: Daniel" width={380} />
                 </div>
               </div>
-              <div className="c2 rv r">
+              <div className="c2 rv r" style={{ height: "130px" }}>
                 <div
                   className="ph"
                   role="img"
                   aria-label="Daniel testing workspace"
                 >
-                  <img src={photo4} alt="Photo: workspace" width={400} />
+                  <img
+                    src={photo4}
+                    alt="Photo: workspace"
+                    
+                  />
                 </div>
               </div>
               <div
@@ -374,9 +378,14 @@ export default function App() {
           </div>
         </section>
 
-        <section id="allworks" className="on-w" hidden>
+        <section
+          id="allworks"
+          className="on-w"
+          hidden
+          style={{ marginTop: "-200px" }}
+        >
           <h2>All works</h2>
-          <div className="agrid" id="agrid"></div>
+          <div className="agrid" id="agrid" style={{ padding: "60px" }}></div>
         </section>
 
         <section id="about-me" className="on-n" style={{ marginTop: "-100px" }}>
