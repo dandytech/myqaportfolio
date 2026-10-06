@@ -347,7 +347,7 @@ export default function App() {
           <div className="mq" id="mq"></div>
         </section>
 
-        <section id="work" className="on-w">
+        <section id="work" className="on-w" style={{ marginTop: "100px" }}>
           <div className="pin">
             <div className="wh">
               <h2>Selected work</h2>
@@ -379,7 +379,7 @@ export default function App() {
           <div className="agrid" id="agrid"></div>
         </section>
 
-        <section id="about-me" className="on-n">
+        <section id="about-me" className="on-n" style={{ marginTop: "-100px" }}>
           <div className="two">
             <div className="me" id="me">
               <div className="ph" role="img" aria-label="Portrait of Daniel">
