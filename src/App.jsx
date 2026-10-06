@@ -71,6 +71,7 @@ export default function App() {
                     color: "",
                     display: "block",
                     marginBottom: "0px",
+                    fontSize: "100px"
                   }}
                 >
                   Software QA Engineer
@@ -78,17 +79,17 @@ export default function App() {
               </span>
             </div>
             <div className="wrow">
-              <span className="sw" style={{ "--i": "1" }}>
+              <span className="sw" style={{ "--i": "1" ,  fontSize: "100px"}}>
                 <span>Web</span>
               </span>
             </div>
             <div className="wrow">
-              <span className="sw" style={{ "--i": "2" }}>
+              <span className="sw" style={{ "--i": "2",  fontSize: "100px" }}>
                 <span>API</span>
               </span>
             </div>
             <div className="wrow">
-              <span className="sw" style={{ "--i": "3" }}>
+              <span className="sw" style={{ "--i": "3",  fontSize: "100px" }}>
                 <span>Mobile</span>
               </span>
             </div>
