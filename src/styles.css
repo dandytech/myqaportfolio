@@ -1893,8 +1893,7 @@ header.show {
     display: inline-block;
     font-size: 14px;
     padding: 5px;
-    text-decoration: underline
-   
+    text-decoration: underline;
   }
 
   .pill {

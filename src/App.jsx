@@ -71,7 +71,6 @@ export default function App() {
                     color: "",
                     display: "block",
                     marginBottom: "0px",
-                    fontSize: "100px"
                   }}
                 >
                   Software QA Engineer
@@ -79,17 +78,17 @@ export default function App() {
               </span>
             </div>
             <div className="wrow">
-              <span className="sw" style={{ "--i": "1" ,  fontSize: "100px"}}>
+              <span className="sw" style={{ "--i": "1" }}>
                 <span>Web</span>
               </span>
             </div>
             <div className="wrow">
-              <span className="sw" style={{ "--i": "2",  fontSize: "100px" }}>
+              <span className="sw" style={{ "--i": "2" }}>
                 <span>API</span>
               </span>
             </div>
             <div className="wrow">
-              <span className="sw" style={{ "--i": "3",  fontSize: "100px" }}>
+              <span className="sw" style={{ "--i": "3" }}>
                 <span>Mobile</span>
               </span>
             </div>
@@ -189,11 +188,7 @@ export default function App() {
                   role="img"
                   aria-label="Daniel testing workspace"
                 >
-                  <img
-                    src={photo4}
-                    alt="Photo: workspace"
-                    
-                  />
+                  <img src={photo4} alt="Photo: workspace" />
                 </div>
               </div>
               <div
