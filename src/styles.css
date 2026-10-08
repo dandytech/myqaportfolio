@@ -1000,8 +1000,6 @@ header.show {
 
   aspect-ratio: 1;
 
-  border: 6px solid var(--navy);
-
   box-shadow: 8px 8px 0 var(--burg);
 
   overflow: hidden;
@@ -1011,8 +1009,6 @@ header.show {
 
 .c1 .ph,
 .c2 .ph {
-  height: 100%;
-
   width: 100%;
 
   border: 0;

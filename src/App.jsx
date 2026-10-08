@@ -179,28 +179,35 @@ export default function App() {
             <div className="collage">
               <div className="c1 rv l">
                 <div className="ph" role="img" aria-label="Daniel at work">
-                  <img src={photo2} alt="Photo: Daniel" width={380} />
+                  <img src={photo2} alt="Photo: Daniel" />
                 </div>
               </div>
-              <div className="c2 rv r" style={{ height: "130px" }}>
+              <div className="c2 rv r" style={{}}>
                 <div
                   className="ph"
                   role="img"
                   aria-label="Daniel testing workspace"
+                  style={{}}
                 >
-                  <img src={photo4} alt="Photo: workspace" />
+                  <img
+                    src={photo4}
+                    alt="Photo: workspace"
+                    style={{
+                      border: "5px solid #100f0f",
+                    }}
+                  />
                 </div>
               </div>
               <div
                 className="note rv s"
-                style={{ transitionDelay: ".5s", marginBottom: "-70px" }}
+                style={{ transitionDelay: ".5s", marginBottom: "0px" }}
               >
                 hi, I am Daniel
               </div>
             </div>
             <div>
               <h2
-                style={{ marginTop: "40px" }}
+                style={{ marginTop: "0px" }}
                 id="ty"
                 data-t="I find the bugs before your users do."
                 aria-label="I find the bugs before your users do."
